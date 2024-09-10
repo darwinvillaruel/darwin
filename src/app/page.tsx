@@ -1,7 +1,11 @@
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+
 export default function Home() {
   return (
-    <div className="container">
-      <h1>Darwin Villaruel</h1>
-    </div>
+    <main className="mx-auto py-3 container">
+      <Navbar />
+      <Hero />
+    </main>
   );
 }
