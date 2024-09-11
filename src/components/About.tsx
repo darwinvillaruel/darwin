@@ -4,14 +4,14 @@ export default function About() {
   return (
     <>
       <button
-        className="btn"
+        className="btn btn-info"
         onClick={() => document.getElementById("about_modal").showModal()}>
         About
       </button>
       <dialog
         id="about_modal"
         className="modal">
-        <div className="modal-box">
+        <div className="rounded-none w-screen max-w-none h-screen max-h-none modal-box">
           <h3 className="font-bold text-lg">Hello!</h3>
           <p className="py-4">Press ESC key or click the button below to close</p>
           <div className="modal-action">

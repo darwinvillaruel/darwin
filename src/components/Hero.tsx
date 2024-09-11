@@ -1,17 +1,22 @@
 export default function Hero() {
   return (
-    <div className="gap-5 grid py-5">
-      <h1 className="text-5xl">I'm Darwin Villaruel.</h1>
-      <p>Aspiring backend developer with a passion for building scalable backend solutions and automations. </p>
-      <p>
-        Currently, a Data Analyst at &nbsp;
-        <a
-          className="border-b-2 text-green-500"
-          href="https://methodfi.com">
-          Method
-        </a>
-        , an API for debt management, where I use data to enhance backend processes and drive efficiency.
-      </p>
+    <div className="gap-4 grid py-5">
+      <div>
+        <div className="font-semibold text-2xl">Darwin Villaruel</div>
+        <p className="text-xl">Developer | Automations</p>
+      </div>
+      <div className="gap-4 grid">
+        <p>I'm Darwin, a backend developer with passion in building scalable backend solutions and automations.</p>
+        <p>
+          Currently, a Data Analyst at{" "}
+          <a
+            className="bg-green-400 px-2 font-semibold text-black no-underline"
+            href="https://methodfi.com">
+            Method
+          </a>
+          , an API for debt management, where I use data to enhance backend processes and drive efficiency.
+        </p>
+      </div>
     </div>
   );
 }

@@ -1,10 +1,8 @@
-import About from "./About";
-
 export default function Navbar() {
   return (
     <nav>
-      <div className="bg-base-100 navbar">
-        <div className="navbar-start">
+      <div className="p-0 navbar">
+        <div className="lg:hidden navbar-start">
           <div className="dropdown">
             <div
               tabIndex={0}
@@ -26,37 +24,64 @@ export default function Navbar() {
             </div>
             <ul
               tabIndex={0}
-              className="z-[1] gap-2 grid bg-base-100 shadow mt-3 p-2 rounded-box w-52 dropdown-content menu menu-sm">
+              className="z-[1] bg-base-100 shadow mt-3 p-2 rounded-box w-52 dropdown-content menu menu-sm">
               <li>
-                <About />
+                <button className="btn btn-outline btn-primary">Primary</button>
               </li>
               <li>
-                <button
-                  id="works"
-                  className="btn">
-                  Works
-                </button>
+                <a>Parent</a>
+                <ul className="p-2">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a>Item 3</a>
               </li>
             </ul>
           </div>
-          <a className="text-xl btn btn-ghost">daisyUI</a>
+          <a className="text-xl btn btn-ghost">drwn</a>
         </div>
         <div className="lg:flex hidden navbar-center">
-          <ul className="px-1 menu menu-horizontal">
+          <ul className="px-0 menu menu-horizontal">
             <li>
-              <About />
+              <details>
+                <summary className="pl-0">
+                  <button className="border-b-4 btn btn-outline btn-primary">Darwin</button>
+                </summary>
+                <ul className="border-2 border-primary p-2 w-80">
+                  <li>
+                    <a>Home</a>
+                  </li>
+                  <li>
+                    <a>Contact</a>
+                  </li>
+                  <li>
+                    <a>About</a>
+                  </li>
+                </ul>
+              </details>
             </li>
             <li>
-              <button
-                id="works"
-                className="btn">
-                Works
-              </button>
+              <details>
+                <summary>
+                  <button className="border-b-4 btn btn-outline btn-secondary">Projects</button>
+                </summary>
+                <ul className="border-2 border-primary p-2 w-80">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </details>
             </li>
           </ul>
-        </div>
-        <div className="navbar-end">
-          <a className="btn">Contact</a>
         </div>
       </div>
     </nav>
