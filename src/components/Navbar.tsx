@@ -1,3 +1,5 @@
+import About from "./About";
+
 export default function Navbar() {
   return (
     <nav>
@@ -24,12 +26,16 @@ export default function Navbar() {
             </div>
             <ul
               tabIndex={0}
-              className="z-[1] bg-base-100 shadow mt-3 p-2 rounded-box w-52 dropdown-content menu menu-sm">
+              className="z-[1] gap-2 grid bg-base-100 shadow mt-3 p-2 rounded-box w-52 dropdown-content menu menu-sm">
               <li>
-                <a>About</a>
+                <About />
               </li>
               <li>
-                <a href="">Works</a>
+                <button
+                  id="works"
+                  className="btn">
+                  Works
+                </button>
               </li>
             </ul>
           </div>
@@ -38,10 +44,14 @@ export default function Navbar() {
         <div className="lg:flex hidden navbar-center">
           <ul className="px-1 menu menu-horizontal">
             <li>
-              <a>About</a>
+              <About />
             </li>
             <li>
-              <a href="">Works</a>
+              <button
+                id="works"
+                className="btn">
+                Works
+              </button>
             </li>
           </ul>
         </div>

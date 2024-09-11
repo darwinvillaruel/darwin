@@ -4,7 +4,7 @@ export default function Hero() {
       <h1 className="text-5xl">I'm Darwin Villaruel.</h1>
       <p>Aspiring backend developer with a passion for building scalable backend solutions and automations. </p>
       <p>
-        Currently, a Data Analyst at&nbsp;
+        Currently, a Data Analyst at &nbsp;
         <a
           className="border-b-2 text-green-500"
           href="https://methodfi.com">
