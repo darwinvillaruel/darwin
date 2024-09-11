@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="gap-4 grid">
         <p>I'm Darwin, a backend developer with passion in building scalable backend solutions and automations.</p>
         <p>
-          Currently, a Data Analyst at &apos;
+          Currently, a Data Analyst at
           <a
             className="bg-green-400 px-2 font-semibold text-black no-underline"
             href="https://methodfi.com">
