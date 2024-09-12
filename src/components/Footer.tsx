@@ -1,4 +1,6 @@
 import About from "./About";
+import { HiMail } from "react-icons/hi";
+import { HiSaveAs } from "react-icons/hi";
 
 export default function Footer() {
   return (
@@ -7,10 +9,16 @@ export default function Footer() {
         <About />
       </div>
       <div>
-        <button className="btn btn-info">Contact</button>
+        <button className="btn btn-info">
+          <HiMail />
+          Contact
+        </button>
       </div>
       <div>
-        <button className="btn btn-info">PDF</button>
+        <button className="btn btn-info">
+          <HiSaveAs />
+          PDF
+        </button>
       </div>
     </section>
   );

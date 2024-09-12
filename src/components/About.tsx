@@ -1,13 +1,20 @@
 "use client";
-
-import data from "@/lib/data";
+import { HiUserCircle } from "react-icons/hi";
 
 export default function About() {
+  const handleClick = (item: string) => {
+    const dialog = document.getElementById(item) as HTMLDialogElement | null;
+    if (dialog) {
+      dialog.showModal();
+    } else {
+      console.log(`Dialog with id ${item} not found`);
+    }
+  };
   return (
     <>
       <button
         className="btn btn-info"
-        onClick={() => document.getElementById("about_modal").showModal()}>
+        onClick={() => handleClick("about_modal")}>
         About
       </button>
       <dialog
