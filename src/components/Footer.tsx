@@ -9,10 +9,12 @@ export default function Footer() {
         <About />
       </div>
       <div>
-        <button className="btn btn-info">
-          <HiMail />
-          Contact
-        </button>
+        <a href="mailto:darwinvillaruel2215@gmail.com">
+          <button className="btn btn-info">
+            <HiMail />
+            Contact
+          </button>
+        </a>
       </div>
       <div>
         <button className="btn btn-info">
