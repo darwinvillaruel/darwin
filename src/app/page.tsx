@@ -1,8 +1,9 @@
 import Footer from "@/components/Footer";
+import About from "@/components/About";
 
 export default function Home() {
   return (
-    <main className="container flex flex-col justify-between min-h-screen py-5 mx-auto">
+    <main className="container flex flex-col justify-between min-h-screen py-5">
       <section>
         <h1 className="py-2 text-3xl font-semibold lg:text-4xl">
           👋 Hi! I'm Darwin
@@ -21,8 +22,11 @@ export default function Home() {
           Check out my projects!
         </p>
       </section>
-      <section>
+      <section className="flex flex-row justify-between">
         <Footer />
+        <div className="self-end">
+          <About />
+        </div>
       </section>
     </main>
   );
