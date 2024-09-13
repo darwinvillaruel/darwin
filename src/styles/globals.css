@@ -67,3 +67,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.font-space {
+  font-family: var(--font-space), sans-serif;
+}
