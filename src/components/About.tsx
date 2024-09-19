@@ -16,7 +16,7 @@ export default function About() {
           htmlFor="about-me"
           aria-label="close sidebar"
           className="drawer-overlay"></label>
-        <div className="min-h-full p-4 menu bg-base-200 text-base-content w-96">
+        <div className="min-h-full p-4 menu bg-base-200 text-base-content w-80 lg:w-96">
           <h5 className="py-3 text-lg font-semibold">Work Experience</h5>
           {data.map((item, index) => (
             <div key={index}>
