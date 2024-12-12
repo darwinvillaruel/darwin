@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import About from "@/components/About";
+import Project from "@/components/Project";
 
 export default function Home() {
   return (
@@ -14,13 +15,16 @@ export default function Home() {
             <a href="https://methodfi.com">Method</a>
           </span>
         </p>
-        <p className="mt-5 text-lg lg:text-xl">
+        <p className="mt-2 text-sm lg:mt-5 lg:text-xl">
           A developer with interest in building full stack applications and
           setting up automations to improve productivity.
         </p>
-        <p className="py-2 mt-10 text-lg border-t-2 border-gray-600 border-dotted lg:text-xl">
+        <p className="py-2 mt-5 border-t-2 border-gray-600 border-dotted lg:text-xl">
           Check out my projects!
         </p>
+        <div>
+          <Project />
+        </div>
       </section>
       <section className="flex flex-row justify-between">
         <Footer />

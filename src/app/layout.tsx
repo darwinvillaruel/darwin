@@ -1,11 +1,17 @@
 import { Poppins as FontSans, Space_Grotesk as Space } from "next/font/google";
 import "../styles/globals.css";
+import { Metadata } from "next";
 
-// const fontSans = FontSans({
-//   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-//   subsets: ["latin"],
-//   variable: "--font-sans",
-// });
+export const metadata: Metadata = {
+  title: "Darwin Villaruel",
+  description: "Data Analyst | Developer",
+  openGraph: {
+    title: "Darwin Villaruel",
+    url: "https://darwinvillaruel.com",
+    images: "/darwin_pp.jpg",
+    siteName: "Darwin Villaruel",
+  },
+};
 
 const space = Space({
   weight: ["300", "400", "500", "600", "700"],
