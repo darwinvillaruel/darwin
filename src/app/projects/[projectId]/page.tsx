@@ -9,6 +9,16 @@ export default function ProjectDetails({
 }) {
   const projects = project.find((proj) => proj.slug === params.projectId);
 
+  if (!projects) {
+    return (
+      <main className="container flex items-center justify-center min-h-screen">
+        <h1 className="text-3xl font-semibold text-red-500">
+          No projects data available.
+        </h1>
+      </main>
+    );
+  }
+
   return (
     <main className="container flex flex-col justify-between min-h-screen py-5">
       <section>
