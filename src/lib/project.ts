@@ -18,7 +18,7 @@ const project: Projects[] = [
     title: "Video Editor Portfolio",
     slug: "editor-portfolio",
     description:
-      "Built a responsive portfolio website using Next.js to showcase video editing skills and projects.",
+      "Built a responsive portfolio website using Next.js for my video editor friend that highlights his video editing skills and current projects.",
     technologies: [
       "Next.js",
       "Typescript",
