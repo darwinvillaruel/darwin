@@ -16,8 +16,15 @@ export default function Home() {
           </span>
         </p>
         <p className="mt-2 text-sm lg:mt-5 lg:text-xl">
-          A developer with interest in building full stack applications and
-          setting up automations to improve productivity.
+          A developer and data analyst with interest in building full stack
+          applications and setting up automations to improve productivity.
+          Experienced in analyzing data to uncover{" "}
+          <i>
+            actionable insights, creating reports, and developing data-driven
+            solutions
+          </i>{" "}
+          that enhance decision-making. Leverages both development and
+          analytical skills to streamline workflows.
         </p>
         <p className="py-2 mt-5 border-t-2 border-gray-600 border-dotted lg:text-xl">
           Check out my projects!
