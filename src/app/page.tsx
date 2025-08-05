@@ -11,11 +11,11 @@ export default function Home() {
         </h1>
         <p className="lg:text-lg font-space">
           Data Analyst @{" "}
-          <span className="px-2 bg-green-500 hover:text-green-300">
+          <span className="px-2 bg-green-500 hover:text-white">
             <a href="https://methodfi.com">Method</a>
           </span>{" "}
           & Integration Developer @{" "}
-          <span className="px-2 bg-blue-500">
+          <span className="px-2 bg-blue-500 hover:text-white">
             <a href="https://uleads.com.au">Uleads</a>
           </span>{" "}
         </p>
