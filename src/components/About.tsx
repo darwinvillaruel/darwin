@@ -20,23 +20,17 @@ export default function About() {
           <h5 className="py-3 text-lg font-semibold">Work Experience</h5>
           {data.map((item, index) => (
             <div key={index}>
-              <h5 className="py-2 border-t-2 border-gray-600 border-dotted">
-                {item.company === "Method Financial" ? (
-                  <span className="p-1 bg-green-500">
-                    <a href={item.website}>{item.company}</a>
-                  </span>
-                ) : (
-                  <span className="p-1 bg-blue-500">
-                    <a href={item.website}>{item.company}</a>
-                  </span>
-                )}
+              <h5 className="py-2 border-t-2 border-gray-600 border-dotted ">
+                <span className="font-semibold text-blue-800">
+                  <a href={item.website}>{item.company} </a>
+                </span>
                 - {item.location}
               </h5>
               <p className="font-semibold">{item.role}</p>
               <p>{item.date}</p>
               {item.desc.map((item, index) => (
                 <ul key={index} className="list-outside ms-5">
-                  <li className="py-2 mb-3">{item}</li>
+                  <li className="py-2 mb-2">{item}</li>
                 </ul>
               ))}
             </div>

@@ -9,6 +9,18 @@ type Data = {
 
 const data: Data[] = [
   {
+    date: "June 2024 - Present",
+    company: "ULeads",
+    website: "https://uleads.com.au",
+    location: "Brisbane, Queensland",
+    role: "Integration Engineer",
+    desc: [
+      "Ensure that leads are completely received with no data loss by building seamless integration and robust connection between platforms.",
+      "Maintain integrations between internal systems and external systems via Leadshook, Leadbyte, GH, and Zapier using APIs.",
+      "Write and maintain technical documentation and integration process manuals. Act as a liaison between technical teams and non-technical departments.",
+    ],
+  },
+  {
     date: "March 2022 - Present",
     company: "Method Financial",
     website: "https://methodfi.com",

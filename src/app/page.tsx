@@ -11,7 +11,7 @@ export default function Home() {
         </h1>
         <p className="lg:text-lg font-space">
           Data Analyst @{" "}
-          <span className="px-2 bg-green-500">
+          <span className="px-2 bg-green-500 hover:text-green-300">
             <a href="https://methodfi.com">Method</a>
           </span>{" "}
           & Integration Developer @{" "}
@@ -25,15 +25,10 @@ export default function Home() {
           platforms using tools like n8n, Zapier, Make.com, Hightouch, Leadbyte,
           Leadshook and CRM systems like Zoho, Salesforce, Close, LendCRM,
           Pipedrive, etc.
-          <br></br> <br></br> Works as data analyst and developer with interest
-          in building full stack applications and setting up automations to
-          improve productivity. Experienced in analyzing data to uncover{" "}
-          <i>
-            actionable insights, creating reports, and developing data-driven
-            solutions
-          </i>{" "}
-          that enhance decision-making. Leverages both development and
-          analytical skills to streamline workflows.
+          <br></br> <br></br> As a data analyst and integration developer, I
+          specialize in building clean, organized data integration workflows
+          with a strong focus on automation and AI to drive efficiency and
+          scalability.
         </p>
         <p className="py-2 mt-5 border-t-2 border-gray-600 border-dotted lg:text-xl">
           Check out my projects!
