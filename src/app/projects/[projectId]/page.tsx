@@ -4,6 +4,7 @@ import { IoGlobeOutline } from "react-icons/io5";
 import { IoLogoGithub } from "react-icons/io5";
 import Footer from "@/components/Footer";
 import About from "@/components/About";
+import CaseStudy from "@/components/CaseStudy";
 
 export default function ProjectDetails({
   params,
@@ -29,54 +30,76 @@ export default function ProjectDetails({
           👋 Hi! I'm Darwin
         </h1>
         <p className="lg:text-lg font-space">
-          🧑‍💻 Data / GTM Engineer at{" "}
-          <span className="px-2 bg-green-500">
+          Data / GTM Engineer @{" "}
+          <span className="px-2 bg-green-500 hover:text-white">
             <a href="https://methodfi.com">Method</a>
-          </span>
+          </span>{" "}
+          & Integration Developer @{" "}
+          <span className="px-2 bg-blue-500 hover:text-white">
+            <a href="https://uleads.com.au">Uleads</a>
+          </span>{" "}
         </p>
         <p className="mt-2 text-sm lg:mt-5 lg:text-xl">
           A developer with interest in building full stack applications and
           setting up automations to improve productivity.
         </p>
         <div className="py-2 mt-5 border-t-2 border-gray-600 border-dotted lg:text-xl">
-          <h3 className="mt-5 mb-3 font-semibold">{projects?.title}</h3>
-          <div className="flex gap-1 mb-3">
-            <a href={projects?.projectLink}>
-              <IoGlobeOutline size={25} />
-            </a>
-            <a href={projects?.sourceCode}>
-              <IoLogoGithub size={25} />
-            </a>
-          </div>
-          <div className="grid-cols-2 gap-2 md:grid my-7">
-            <div>
-              <p className="pr-1">{projects?.description}</p>
-              <div className="lg:flex lg:gap-9">
-                <Image
-                  src={projects.media}
-                  width={600}
-                  height={600}
-                  alt="project-media"
-                  className="my-3 rounded-xl"></Image>
+          {projects.caseStudy ? (
+            <CaseStudy
+              title={projects.title}
+              description={projects.description}
+              technologies={projects.technologies}
+              media={projects.media}
+              projectLink={projects.projectLink}
+              sourceCode={projects.sourceCode}
+              caseStudy={projects.caseStudy}
+            />
+          ) : (
+            <>
+              <h3 className="mt-5 mb-3 font-semibold">{projects?.title}</h3>
+              <div className="flex gap-1 mb-3">
+                {projects.projectLink && (
+                  <a href={projects.projectLink}>
+                    <IoGlobeOutline size={25} />
+                  </a>
+                )}
+                {projects.sourceCode && (
+                  <a href={projects.sourceCode}>
+                    <IoLogoGithub size={25} />
+                  </a>
+                )}
               </div>
-            </div>
-            <div>
-              <div className="mb-5">
-                <h5 className="font-semibold">Technologies</h5>
-                {projects?.technologies.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
+              <div className="grid-cols-2 gap-2 md:grid my-7">
+                <div>
+                  <p className="pr-1">{projects?.description}</p>
+                  <div className="lg:flex lg:gap-9">
+                    <Image
+                      src={projects.media}
+                      width={600}
+                      height={600}
+                      alt="project-media"
+                      className="my-3 rounded-xl"></Image>
+                  </div>
+                </div>
+                <div>
+                  <div className="mb-5">
+                    <h5 className="font-semibold">Technologies</h5>
+                    {projects?.technologies.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </div>
+                  <div className="mb-5">
+                    <h5 className="font-semibold">Challenges Faced</h5>
+                    <p>{projects?.challengesFaced}</p>
+                  </div>
+                  <div>
+                    <h5 className="font-semibold">Future Improvements</h5>
+                    <p>{projects?.futureImprovements}</p>
+                  </div>
+                </div>
               </div>
-              <div className="mb-5">
-                <h5 className="font-semibold">Challenges Faced</h5>
-                <p>{projects?.challengesFaced}</p>
-              </div>
-              <div>
-                <h5 className="font-semibold">Future Improvements</h5>
-                <p>{projects?.futureImprovements}</p>
-              </div>
-            </div>
-          </div>
+            </>
+          )}
           <section className="flex flex-row justify-between">
             <Footer />
             <div className="self-end">
