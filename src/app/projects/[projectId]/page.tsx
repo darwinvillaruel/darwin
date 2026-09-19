@@ -29,7 +29,7 @@ export default function ProjectDetails({
           👋 Hi! I'm Darwin
         </h1>
         <p className="lg:text-lg font-space">
-          🧑‍💻 Data Analyst at{" "}
+          🧑‍💻 Data / GTM Engineer at{" "}
           <span className="px-2 bg-green-500">
             <a href="https://methodfi.com">Method</a>
           </span>
