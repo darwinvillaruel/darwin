@@ -25,7 +25,7 @@ const data: Data[] = [
     company: "Method Financial",
     website: "https://methodfi.com",
     location: "Austin, TX",
-    role: "Data Analyst",
+    role: "Data / GTM Engineer",
     desc: [
       "Streamlined Customer Success Management operations by seamlessly integrating Close, Linear, Outreach, and Google Sheets with the use of Zapier. This has greatly eased the burden on CSM teams, fostering a cohesive workflow.",
       "Contributed to improving Method's API documentation using MDX and React JS. Updated content and implemented dynamic features for a user-friendly, interactive experience.",

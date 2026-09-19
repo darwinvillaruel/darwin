@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Darwin Villaruel",
-  description: "Data Analyst | Developer",
+  description: "Data / GTM Engineer | Developer",
   openGraph: {
     title: "Darwin Villaruel",
     url: "https://darwinvillaruel.com",
